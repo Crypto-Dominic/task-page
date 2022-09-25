@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <title>Task It</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="taskit-logo-part pt-5 col-lg-2 col-md-4 justify-content-around"
+        >
+          <div class="text-center">
+            <div class="">
+              <img src="/img/taskitlogo.png" alt="taskIt logo" />
+            </div>
+            <h5 class="mb-2">Taskit</h5>
+          </div>
+          <div class="dashboard text-center pt-5">
+            <div class="d-flex align-items-center">
+              <div class="dashboard-image">
+                <img src="/img/box.png" class="ms-5" alt="dash-board" />
+              </div>
+              
+                <div class="text-part"><h6 class="ms-3 pt-2"><a href="#">Dashboard</a></h6></div>
+              
+            </div>
+          </div>
+          <div class="dashboard text-center pt-5">
+            <div class="d-flex align-items-center">
+              <div class="dashboard-image">
+                <img src="/img/task.png" class="ms-5 ps-1" alt="dash-board" />
+              </div>
+              
+                <div class="text-part"><h6 class="ms-3 pt-2"><a href="#">Tasks</a></h6></div>
+              
+            </div>
+          </div>
+          <div class="dashboard text-center pt-5">
+            <div class="d-flex align-items-center">
+              <div class="dashboard-image">
+                <img src="/img/profile.png" class="ms-5" alt="dash-board" />
+              </div>
+              
+                <div class="text-part"><h6 class="ms-3 pt-2"><a href="">Profile</a></h6></div>
+              
+            </div>
+          </div>
+          <div>
+            <hr class="line" />
+          </div>
+          <div class="dashboard text-center pt-4">
+            <div class="d-flex align-items-center">
+              <div class="dashboard-image">
+                <img src="/img/arrow.png" class="ms-5" alt="dash-board" />
+              </div>
+              
+                <div class="text-part"><h6 class="ms-3 pt-2" onclick="getUsers()"><a href="">Log Out</a></h6></div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-4 mt-5">
+          <div class="header-task">
+            <a href="#">
+              <h2 class="mb-3">Create Task</h2>
+            </a>
+          </div>
+          <div class="form-like">
+            <input type="text" placeholder="Task Name" id="taskName" />
+          </div>
+          <div class="form-like">
+            <input type="text" placeholder="Task Details" id="taskDetails" />
+          </div>
+          <div class="d-flex align-items-center mt-5">
+            <div class="calenda pe-5">
+              <img src="/img/calendar.png" alt="calendar" />
+            </div>
+            <div class="date pe-5 me-5">
+              <h6>Friday 26, February</h6>
+            </div>
+
+
+            <div class="down-arrow ps-5">
+              <img src="/img/down.png" alt="arrow" />
+            </div>
+          </div>
+          <div class="d-flex align-items-center mt-5 pb-5">
+            <div class="calenda pe-5 ps-1">
+              <img src="/img/bell-fill.svg" alt="calendar" height="40px" />
+            </div>
+            <div class="date pe-5 me-5">
+              <h6><time>10.00pm - 3.00pm</time></h6>
+            </div>
+            <div class="down-arrow ps-5 ms-2">
+              <img src="/img/down.png" alt="arrow" />
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="category">
+              <div class="add d-flex">
+                <div class="alarm">
+                  <a href="#">
+                    <img
+                      src="/img/bell-fill.svg"
+                      class="me-2"
+                      alt="notification"
+                    />
+                  </a>
+                </div>
+                <div><h6 class="mt-2 me-5">Add Category</h6></div>
+                <div><h3 class="ms-5">+</h3></div>
+              </div>
+              <div class="add d-flex align-items-center mb-4 mt-3">
+                <div class="homee home-one">
+                  <h6>Home</h6>
+                  <img src="/img/home.png" alt="" />
+                </div>
+                <div class="homee home-two">
+                  <h6>Personal</h6>
+                  <img src="/img/personal.png" alt="" />
+                </div>
+                <div class="homee home-three">
+                  <h6>Work</h6>
+                  <img src="/img/work.png" alt="" />
+                </div>
+              </div>
+              <div class="add d-flex align-items-center">
+                <div class="homee home-four">
+                  <h6>School</h6>
+                  <img src="/img/school.png" alt="" />
+                </div>
+                <div class="home-five">
+                  <h6>New Category</h6>
+                  <img src="/img/newcategory.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="set-reminder ms-2">
+              <div class="d-flex align-items-center">
+                <div class="add reminder d-flex">
+                  <div class="alarm">
+                    <a href="#">
+                      <img
+                        src="/img/bell-fill.svg"
+                        class="me-2 img-fluid"
+                        alt="notification"
+                      />
+                    </a>
+                  </div>
+                  <div class="tt">
+                    <p class="ps-5">Set Reminder</p>
+                  </div>
+                  <div><input type="checkbox" /></div>
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="#"><button class="btn btn-outline-primary" id="cancel">Cancel</button></a>
+                <a href="#"><button class="btn btn-primary" id="create">Create Task</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="title-task-history mt-5">
+            <h3>Task History</h3>
+          </div>
+          <div class="task-history-1 mt-5">
+            <div class="d-flex">
+              <div class="contain" id="container"></div>
+              <div class="icons-history ms-5" id="image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src=" https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"
+    ></script>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
